@@ -6,7 +6,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "jted2"
 
 Gem::Specification.new do |spec|
-  spec.name          = "ed."
+  spec.name          = "jekyll-theme-ed2"
   spec.version       = JTEd2::VERSION
   spec.authors       = ["Karl Stolley", "Alex Gil"]
   spec.email         = ["karl.stolley@gmail.com","colibri.alex@gmail.com"]
