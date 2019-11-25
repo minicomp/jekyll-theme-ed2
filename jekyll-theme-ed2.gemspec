@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://minicomp.github.io/ed/"
   spec.license       = "MIT"
 
-  spec.required_ruby_version = ">= 2.2.7"
+  spec.required_ruby_version = ">= 2.4.0"
   spec.metadata      = {
     "bug_tracker_uri" => "https://github.com/minicomp/ed/issues",
     "changelog_uri"   => "https://github.com/minicomp/ed/releases",

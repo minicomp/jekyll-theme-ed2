@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.2.7
+- 2.4.0
 
 
 # Assume bundler is being used, therefore
