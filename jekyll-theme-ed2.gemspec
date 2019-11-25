@@ -8,8 +8,8 @@ require "jted2"
 Gem::Specification.new do |spec|
   spec.name          = "ed."
   spec.version       = JTEd2::VERSION
-  spec.authors       = ["Alex Gil", "Karl Stolley"]
-  spec.email         = ["colibri.alex@gmail.com", "karl.stolley@gmail.com"]
+  spec.authors       = ["Karl Stolley", "Alex Gil"]
+  spec.email         = ["karl.stolley@gmail.com","colibri.alex@gmail.com"]
 
   spec.summary       = "A Jekyll theme for minimal editions"
   spec.description   = "Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility, durability, ease and flexibility."
