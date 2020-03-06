@@ -1,9 +1,6 @@
 # frozen_string_literal: true
 
-lib = File.expand_path("lib", __dir__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-
-require "jted2"
+require_relative "lib/jted2"
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-ed2"
