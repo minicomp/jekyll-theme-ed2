@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
     "changelog_uri"   => "https://github.com/minicomp/ed/releases",
     "documentation_uri" => "https://minicomp.github.io/ed/documentation/",
     "wiki_uri" => "https://github.com/minicomp/ed/wiki",
-    "homepage_uri"    => "https://minicomp.github.io/ed/",
+    "homepage_uri"    => spec.homepage,
     "source_code_uri" => "https://github.com/minicomp/ed"
   }
 
