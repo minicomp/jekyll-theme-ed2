@@ -9,7 +9,10 @@ Gem::Specification.new do |spec|
   spec.email         = ["karl.stolley@gmail.com","colibri.alex@gmail.com"]
 
   spec.summary       = "A Jekyll theme for minimal editions"
-  spec.description   = "Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility, durability, ease and flexibility."
+  spec.description   = <<~ DESC
+    Ed is a Jekyll theme designed for textual editors based on minimal computing principles,
+    and focused on legibility, durability, ease and flexibility.
+  DESC
   spec.homepage      = "https://minicomp.github.io/ed/"
   spec.license       = "MIT"
 
