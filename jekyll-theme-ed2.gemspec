@@ -16,7 +16,6 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://minicomp.github.io/ed/"
   spec.license       = "MIT"
 
-  spec.required_ruby_version = ">= 2.4.0"
   spec.metadata      = {
     "bug_tracker_uri" => "https://github.com/minicomp/ed/issues",
     "changelog_uri"   => "https://github.com/minicomp/ed/releases",
@@ -29,6 +28,8 @@ Gem::Specification.new do |spec|
   spec.files         = Dir.glob("**/*").select do |f|
     f.match(%r{^(404|assets|optional|_layouts|_includes|_sass|_texts|index|search|about|credits|documentation|atom|Gemfile|LICENSE|README)}i)
   end
+
+  spec.required_ruby_version = ">= 2.4.0"
 
   spec.add_runtime_dependency "jekyll", "~> 4.0"
 
