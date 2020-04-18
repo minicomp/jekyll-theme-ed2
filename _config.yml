@@ -1,62 +1,42 @@
-# Built with Jekyll 3.6.0
+# Built with Jekyll 4.0.0+
 
-# Setup
-title:               Ed.
-tagline:             'a jekyll theme for minimal editions'
-description:         'Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.'
-url:                 'http://minicomp.github.io'
-baseurl:             '/ed'
+# Ed-namespaced values; values preceded with &<something> are reused below for
+# the default set of Jekyll configuration properties
+ed:
+  title: &title
+  tagline:
+  description: &description
+  repo: # GitHub repository URL
+  contributors: # repeat name blocks as needed for multiple contributors
+    - name:
+      role: # editor, translator, archivist, etc.
+      affiliation: # university, corporate, non-profit affiliation, etc.
+      email: &email
+      url:
+    - name:
+      role: # editor, translator, archivist, etc.
+      affiliation:  # university, corporate, non-profit affiliation, etc.
+      email:
+      url:
 
-# About/contact
-author:
-  name:              Alex Gil
-  url:               https://twitter.com/elotroalex
-  email:             colibri.alex@gmail.com
+# Default site values, based on Jekyll's default minima theme at
+# https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml
+#
+# Values set to *<something> reuse a value already set in the ed-namespaced
+# frontmatter above
 
-# Color scheme. Options: red, orange, magenta, cyan, blue, brown
-color-scheme:
+title: *title
+description: *description
 
-# Permalinks
-permalink: pretty
-permalink: /:title/
+url:
+baseurl:
 
-# Set encoding to UTF-8
-encoding: utf-8
+email: *email
+twitter_username: #reserve for a project-wide Twitter account
+github_username: #reserve for a project-wide GitHub account
 
-# Collections for texts
-collections:
-  texts:
-    output: true
 
-# Markdown specs
-markdown: kramdown
-
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  footnote_backlink: "&#x21a9;&#xfe0e;"
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-# Exclusions from the final site
-exclude:
-  - optional
-  - vendor
-  - ed..gemspec
-  - Gemfile
-  - Gemfile.lock
-  - backstop_data
-  - backstop.json
-
-# Theme
-# (Used for local or custom-server deployments)
-# Uncomment the `theme` line if using the Ed. theme gem on your own computer or server.
-# See https://jekyllrb.com/docs/themes/
-# theme: "ed."
-
-# Remote Theme
-# (Used only for GitHub deployments)
-# See https://help.github.com/en/articles/adding-a-jekyll-theme-to-your-github-pages-site
-remote_theme: minicomp/ed
+# Properties for specifying jekyll-theme-ed2 as the theme in use;
+# remote_theme is used only for deploying to GitHub Pages
+theme: jekyll-theme-ed2
+remote_theme: minicomp/jekyll-theme-ed2
