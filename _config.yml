@@ -7,7 +7,7 @@ ed:
   tagline:
   description: &description
   repo: # GitHub repository URL
-  personnel: # repeat name blocks as needed for multiple personnel
+  contributors: # repeat name blocks as needed for multiple contributors
     - name:
       role: # editor, translator, archivist, etc.
       affiliation: # university, corporate, non-profit affiliation, etc.
