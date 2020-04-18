@@ -1,0 +1,42 @@
+# Built with Jekyll 4.0.0+
+
+# Ed-namespaced values; values preceded with &<something> are reused below for
+# the default set of Jekyll configuration properties
+ed:
+  title: &title
+  tagline:
+  description: &description
+  repo: # GitHub repository URL
+  personnel: # repeat name blocks as needed for multiple personnel
+    - name:
+      role: # editor, translator, archivist, etc.
+      affiliation: # university, corporate, non-profit affiliation, etc.
+      email: &email
+      url:
+    - name:
+      role: # editor, translator, archivist, etc.
+      affiliation:  # university, corporate, non-profit affiliation, etc.
+      email:
+      url:
+
+# Default site values, based on Jekyll's default minima theme at
+# https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml
+#
+# Values set to *<something> reuse a value already set in the ed-namespaced
+# frontmatter above
+
+title: *title
+description: *description
+
+url:
+baseurl:
+
+email: *email
+twitter_username: #reserve for a project-wide Twitter account
+github_username: #reserve for a project-wide GitHub account
+
+
+# Properties for specifying jekyll-theme-ed2 as the theme in use;
+# remote_theme is used only for deploying to GitHub Pages
+theme: jekyll-theme-ed2
+remote_theme: minicomp/jekyll-theme-ed2
